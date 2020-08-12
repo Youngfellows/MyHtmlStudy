@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS背景</title>
+    <style type="text/css">
+        /*id选择器*/
+        #p1 {
+            background-color: gray;
+            padding: 20px;
+        }
+
+        /*类选择器*/
+        p.flower {
+            background-image: url("../img/01.jpg");
+            padding: 20px;
+            /*background-repeat: no-repeat;*/
+            background-position: 50px 100px;
+        }
+
+        /*类选择器*/
+        span.hight_light {
+            background-color: yellow;
+        }
+
+        body {
+            background-image: url("../img/background2.png");
+        }
+    </style>
+</head>
+<body>
+<p id="p1">这是一个段落</p>
+<p class="flower">这是一朵鲜花</p>
+<br/>
+<p>
+    这是文本,这是文本,这是文本,<span class="hight_light">这是文本</span>,这是文本,这是文本,这是文本,这是文本,这是文本,这是文本,
+    这是文本,这是文本,这是文本,这是文本,这是文本,这是文本,这是文本,这是文本,这是文本<span class="hight_light">这是文本</span>这是文本,这是文本
+</p>
+
+</body>
+</html>

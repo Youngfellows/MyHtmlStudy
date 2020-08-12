@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+</head>
+<body>
+<h4>表头:</h4>
+<table border="1">
+    <caption>英雄</caption>
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>地址</th>
+    </tr>
+    <tr>
+        <td>杨过</td>
+        <td>22</td>
+        <td>西安</td>
+    </tr>
+    <tr>
+        <td>小龙女</td>
+        <td>18</td>
+        <td>杭州</td>
+    </tr>
+    <tr>
+        <td>乔峰</td>
+        <td>&nbsp;</td>
+        <td>广州</td>
+    </tr>
+</table>
+
+<h4>垂直的表头:</h4>
+<table border="1">
+    <caption>英雄</caption>
+    <tr>
+        <th>姓名</th>
+        <td>杨过</td>
+    </tr>
+    <tr>
+        <th>年龄</th>
+        <td>18</td>
+    </tr>
+    <tr>
+        <th>城市</th>
+        <td>南京</td>
+    </tr>
+</table>
+
+<h4>横跨两列的单元格：</h4>
+<table border="1">
+    <tr>
+        <th>姓名</th>
+        <th colspan="2">电话</th>
+    </tr>
+    <tr>
+        <td>西门吹雪</td>
+        <td>136123456</td>
+        <td>158123455</td>
+    </tr>
+</table>
+
+<h4>横跨两行的单元格：</h4>
+<table border="1">
+    <tr>
+        <th>姓名</th>
+        <td>西门吹雪</td>
+    </tr>
+    <tr>
+        <th rowspan="2">电话</th>
+        <td>136123455</td>
+    </tr>
+    <tr>
+        <td>189123455</td>
+    </tr>
+</table>
+
+<h4>表格内的标签</h4>
+<table border="1">
+    <tr>
+        <td>
+            <p>这是一个段落</p>
+            <p>这是另外一个段落</p>
+        </td>
+        <td>
+            这个单元包含一个表格：
+            <table border="1">
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>D</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            这个单元包含一个列表：
+            <ul>
+                <li>苹果</li>
+                <li>香蕉</li>
+                <li>火龙果</li>
+                <li>蓝莓</li>
+            </ul>
+        </td>
+        <td>你好,深圳</td>
+    </tr>
+</table>
+
+<h4>单元格边距(Cell padding)</h4>
+<table border="1" cellpadding="20">
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>杨过</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>赵敏</td>
+        <td>19</td>
+    </tr>
+
+</table>
+
+
+<h4>单元格间距(Cell spacing)</h4>
+<table border="1" cellspacing="20">
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>杨过</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>赵敏</td>
+        <td>19</td>
+    </tr>
+
+</table>
+
+<h4>向表格添加背景颜色或背景图像</h4>
+<h5>背景颜色</h5>
+<table border="1" bgcolor="yellow">
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>杨过</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>赵敏</td>
+        <td>19</td>
+    </tr>
+</table>
+
+<h5>背景图像</h5>
+<table border="1" background="../img/01.jpg">
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>杨过</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>赵敏</td>
+        <td>19</td>
+    </tr>
+</table>
+
+<h4>向表格单元添加背景颜色或者背景图像</h4>
+<table border="1">
+    <tr>
+        <th bgcolor="blue">姓名</th>
+        <th bgcolor="yellow">年龄</th>
+    </tr>
+    <tr>
+        <td background="../img/01.jpg">杨过</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>赵敏</td>
+        <td background="../img/02.jpg">19</td>
+    </tr>
+</table>
+
+<h4>在表格单元中排列内容</h4>
+<table border="1" width="400">
+    <tr>
+        <th align="left">消费项目</th>
+        <th align="right">一月</th>
+        <th align="right">二月</th>
+    </tr>
+    <tr>
+        <td align="left">衣服</td>
+        <td align="right">$177.5</td>
+        <td align="right">$88.5</td>
+    </tr>
+    <tr>
+        <td align="left">化妆品</td>
+        <td align="right">$177.5</td>
+        <td align="right">$88.5</td>
+    </tr>
+    <tr>
+        <td align="left">食物</td>
+        <td align="right">$177.5</td>
+        <td align="right">$88.5</td>
+    </tr>
+    <tr>
+        <th align="left">总计</th>
+        <td align="right">$177.5</td>
+        <td align="right">$88.5</td>
+    </tr>
+</table>
+
+</body>
+</html>

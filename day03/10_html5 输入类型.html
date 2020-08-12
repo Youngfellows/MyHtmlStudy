@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 输入类型</title>
+</head>
+<body>
+<form method="get">
+    数量（1 到 5 之间）:
+    <input type="number" name="quantity" min="1" max="5">
+    <br>
+    数量（0 到 100之间,步长10,默认值30）:
+    <input type="number" name="point" min="0" max="100" step="10" value="30">
+    <br>
+    日期:
+    <input type="date" name="birthday">
+    <br>
+    请输入 1980-01-01 之前的日期：<br>
+    <input type="date" name="bday1" max="1979-12-31">
+    <br>
+    请输入 2000-01-01 之后的日期：<br>
+    <input type="date" name="bday2" min="2000-01-02">
+    <br>
+    选择月份和年份:
+    <input type="month" name="birthday_month">
+    <br>
+    选择周和年:
+    <input type="week" name="week_year">
+    <br>
+    选择时间（无时区）:
+    <input type="time" name="user_time">
+    <br>
+    用户选择日期和时间（有时区）:
+    <input type="datetime" name="bdatetime">
+    <br>
+    选择日期和时间（无时区）:
+    <input type="datetime-local" name="bdatetime">
+    <br>
+    选择喜欢的颜色:
+    <input type="color" name="favcolor" value="#ff0000">
+    <br>
+    滑动控件:
+    <input type="range" name="point" min="0" max="100" step="10" value="20">
+    <br>
+    Email:
+    <input type="email" name="email">
+    <br>
+    谷歌搜索:
+    <input type="search" name="google_search">
+    <br>
+    包含 URL 地址的输入字段:
+    <input type="url" name="homepage">
+    <br>
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>

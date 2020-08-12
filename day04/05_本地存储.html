@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>本地存储</title>
+</head>
+<body>
+<div id="result"></div>
+
+<!--本地存储-->
+<script>
+    //检查浏览器是否支持本地存储
+    if (typeof (Storage) !== "undefined") {
+        localStorage.setItem("name", "Tony Ma");
+        document.getElementById("result").innerHTML = localStorage.getItem("name");
+    } else {
+        document.getElementById("result").innerHTML = "抱歉！您的浏览器不支持 Web Storage ...";
+    }
+</script>
+</body>
+</html>

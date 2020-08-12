@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input 属性</title>
+</head>
+<body>
+<form method="get" autocomplete="on" id="form1">
+    姓名:
+    <!--<input type="text" name="name" value="约翰" readonly="readonly" disabled><br>-->
+    <input type="text" name="name" value="约翰"><br>
+    年龄:
+    <input type="text" name="age" value="18"><br>
+    城市:
+    <input type="text" name="city" placeholder="请输入城市" size="20" maxlength="10" autofocus><br>
+    邮箱:
+    <input type="email" name="email" autocomplete="off"><br>
+    选择文件:
+    <input type="file" name="img" multiple="multiple"><br>
+    国家代码:
+    <input type="text" pattern="[A-Za-z0-9]{3}" name="country_code"><br>
+    <input type="submit" value="提交">
+</form>
+密码:
+<input type="password" name="pwd" placeholder="请输入密码" form="form1"> <br>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>插入样式表</title>
+    <!--外部样式表-->
+    <link type="text/css" rel="stylesheet" href="css/my_style1.css">
+    <style type="text/css">
+        /*内部样式表*/
+        div {
+            border: 1px solid green;
+        }
+
+        /*多重样式*/
+        /*属性值将从更具体的样式表中被继承过来*/
+        h3 {
+            text-align: right;
+            font-size: 20pt;
+        }
+    </style>
+
+</head>
+<body>
+<h1>这是H1标签</h1>
+<div>
+    <p>这是一个段落,这是一个段落,这是一个段落,这是一个段落,这是一个段落,这是一个段落,这是一个段落,这是一个段落,这是一个段落,这是一个段落</p>
+</div>
+<p style="color: blue;margin-left: 30px">
+    这是另外一个段落,这是另外一个段落,这是另外一个段落,这是另外一个段落,这是另外一个段落,这是另外一个段落,这是另外一个段落,这是另外一个段落,这是另外一个段落</p>
+
+<h3>这是h3标题</h3>
+</body>
+</html>

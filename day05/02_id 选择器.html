@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>id 选择器</title>
+    <style type="text/css">
+        /*id 选择器以 "#" 来定义。*/
+        #red {
+            color: red;
+        }
+
+        #green {
+            color: green;
+        }
+
+        /*单独的id选择器*/
+        #sidebar {
+            border: 1px dotted #000;
+            padding: 10px   ;
+        }
+
+        /*id 选择器和派生选择器*/
+        #sidebar h2 {
+            font-size: 1em;
+            font-weight: normal;
+            font-style: italic;
+            margin-top: 0;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        #sidebar p {
+            font-style: italic;
+            text-align: right;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<p id="red">这个段落是红色。</p>
+<p id="green">这个段落是绿色。</p>
+<div id="sidebar">
+    <h2>这是H2标题</h2>
+    <p>这是一个段落,这是一个段落,这是一个段落,这是一个段落,这是一个段落,这是一个段落,这是一个段落,这是一个段落,</p>
+</div>
+<body>
+</body>
+</html>

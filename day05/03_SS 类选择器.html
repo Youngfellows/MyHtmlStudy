@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SS 类选择器</title>
+    <style type="text/css">
+        /*在 CSS 中，类选择器以一个点号显示*/
+        .center {
+            text-align: center;
+        }
+
+        /*class 用作派生选择器*/
+        .fancy p {
+            font-size: 32px;
+            color: blue;
+        }
+
+        /*元素也可以基于它们的类而被选择*/
+
+        h2.fancy2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1 class="center">This heading will be center-aligned</h1>
+<p class="center">This paragraph will also be center-aligned.</p>
+<div class="fancy">
+    <p>This paragraph will also be center-aligned.</p>
+</div>
+
+<h2 class="fancy2">这是H2标题</h2>
+</body>
+</html>

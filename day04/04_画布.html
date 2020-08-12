@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>画布</title>
+    <style>
+        canvas {
+            border: 1px solid #c3c3c3;
+        }
+    </style>
+</head>
+<body>
+<canvas id="my_canvas" width="150" height="75"></canvas>
+<br>
+<canvas id="my_canvas2" width="150" height="75"></canvas>
+<br>
+<canvas id="my_canvas3" width="200" height="100"></canvas>
+<br>
+<canvas id="my_canvas4" width="200" height="100"></canvas>
+<br>
+<canvas id="my_canvas5" width="200" height="100"></canvas>
+<br>
+<script type="text/javascript">
+    var ele = document.getElementById("my_canvas");
+    var cxt = ele.getContext("2d");
+    cxt.fillStyle = "#FF0000";
+    cxt.fillRect(0, 0, 150, 75);
+</script>
+
+<script type="text/javascript">
+    var ele = document.getElementById("my_canvas2");
+    var cxt = ele.getContext("2d");
+    cxt.moveTo(10, 10);
+    cxt.lineTo(150, 50);
+    cxt.lineTo(10, 50);
+    cxt.stroke();
+</script>
+<script type="text/javascript">
+    var ele = document.getElementById("my_canvas3");
+    var cxt = ele.getContext("2d");
+    cxt.fillStyle = "#FF0000";
+    cxt.beginPath();
+    cxt.arc(70, 18, 15, 0, Math.PI * 2, true);
+    cxt.closePath();
+    cxt.fill();
+</script>
+<script type="text/javascript">
+    var ele = document.getElementById("my_canvas4");
+    var cxt = ele.getContext("2d");
+    cxt.fillStyle = "#FF0000";
+    var grd = cxt.createLinearGradient(0, 0, 175, 50);
+    grd.addColorStop(0, "#FF0000");
+    grd.addColorStop(1, "#00FF00");
+    cxt.fillStyle = grd;
+    cxt.fillRect(0, 0, 175, 50);
+</script>
+<script type="text/javascript">
+    var ele = document.getElementById("my_canvas5");
+    var cxt = ele.getContext("2d");
+    var img = new Image()
+    img.src = "flower.png"
+    cxt.drawImage(img, 0, 0);
+</script>
+</body>
+</html>

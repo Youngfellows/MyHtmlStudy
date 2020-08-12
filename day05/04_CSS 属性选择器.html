@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 属性选择器</title>
+    <style type="text/css">
+        /*属性选择器*/
+        [title] {
+            color: red;
+        }
+
+        /*属性和值选择器*/
+        [title=sz] {
+            color: blue;
+            border: 5px solid yellow;
+        }
+
+        /*属性和值选择器 - 多个值*/
+        /*适用于由空格分隔的属性值*/
+        [title1~=hello] {
+            color: red;
+        }
+
+        /*适用于由连字符分隔的属性值*/
+        /*[lang|=en] {*/
+        /*    color: yellow;*/
+        /*}*/
+
+        /*属性选择器在为不带有 class 或 id 的表单设置样式时特别有用*/
+        /*设置表单的样式*/
+        input[type="text"] {
+            width: 150px;
+            display: block;
+            margin-bottom: 10px;
+            background-color: yellow;
+            font-family: Verdana, Arial;
+        }
+
+        input[type="submit"] {
+            width: 120px;
+            margin-left: 35px;
+            display: block;
+            font-family: Verdana, Arial;
+        }
+    </style>
+</head>
+<body>
+<h1>可以应用样式</h1>
+<h2 title="Hello world">Hello world!</h2>
+<a title="baidu" href="http://www.baidu.com">百度</a>
+<hr>
+<h1>不可以应用样式</h1>
+<h2>Hello world!</h2>
+<a href="http://www.baidu.com">百度</a>
+<p title="guangzhou">你好广州</p>
+<h3 title="sz">这是H3标题</h3>
+
+<hr>
+<h1>可以应用样式：</h1>
+<h2 title1="hello world">Hello world</h2>
+<p title1="student hello">Hello W3School students!</p>
+<hr/>
+<h1>无法应用样式：</h1>
+<h2 title1="world">Hello world</h2>
+<p title1="student">Hello W3School students!</p>
+
+<hr/>
+<h1>可以应用样式：</h1>
+<p lang="en">Hello!</p>
+<p lang="en-us">Hi!</p>
+<hr/>
+
+<h1>无法应用样式：</h1>
+<p lang="us">Hi!</p>
+<p lang="zh">Hao!</p>
+
+<hr/>
+<form method="get" action="">
+    <input type="text" name="name" value="约翰" size="20" placeholder="请输入姓名">
+    <input type="text" name="age" value="18" size="20" placeholder="请输入年龄">
+    <input type="submit" value="提交">
+</form>
+</body>
+</body>
+</html>
