@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 链接</title>
+    <style type="text/css">
+        /* 未被访问的链接 */
+        a:link {
+            color: #ff0000;
+            text-decoration: none;
+            background-color: #B2FF99;
+        }
+
+        /* 已被访问的链接 */
+        a:visited {
+            color: #00ff00;
+            text-decoration: none;
+            background-color: #FFFF85;
+        }
+
+        /* 鼠标指针移动到链接上 */
+        a:hover {
+            color: #ff00ff;
+            text-decoration: underline;
+            background-color: #FF704D;
+        }
+
+        /* 正在被点击的链接 */
+        a:active {
+            color: #0000ff;
+            text-decoration: underline;
+            background-color: #FF704D;
+        }
+    </style>
+</head>
+<body>
+<p><a href="http://www.baidu.com" target="_blank">这是百度的连接</a></p>
+</body>
+</html>

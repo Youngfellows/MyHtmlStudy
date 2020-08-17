@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style type="text/css">
+        /*ID选择器*/
+        #box {
+            width: 70px; /*盒子的内容宽度*/
+            padding: 5px; /*内边距*/
+            margin: 10px; /*外边距*/
+            border: 1px solid blue;
+            height: 70px;
+        }
+
+        #box p {
+            text-align: center;
+        }
+
+        table {
+            border: 1px solid green;
+        }
+
+        td.test1 {
+            padding: 10px;
+        }
+
+        td.test2 {
+            padding: 1em 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <p>盒子</p>
+</div>
+
+<table>
+    <tr>
+        <td class="test1">
+            这个表格单元的每个边拥有相等的内边距
+        </td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<table>
+    <tr>
+        <td class="test2">
+            这个表格单元的上和下内边距是 0.5cm，左和右内边距是 2.5cm。
+        </td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 文本</title>
+    <style type="text/css">
+        /*id选择器*/
+        p#p1 {
+            text-indent: 5em;
+        }
+
+        div#outer {
+            width: 800px;
+            border: 1px solid gray;
+        }
+
+        /*id选择器 + 派生选择器*/
+        div#inner p {
+            width: 200px;
+            color: blue;
+        }
+
+        /*id选择器*/
+        div#inner {
+            /*缩进*/
+            text-indent: 10%;
+        }
+
+        /*文本对齐方式*/
+        /*派生选择器*/
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: left;
+        }
+
+        h3 {
+            text-align: right;
+        }
+
+        /*字间距*/
+        /*类选择器*/
+        p.spread {
+            /*word-spacing: 30px;*/
+            letter-spacing: 30px;
+        }
+
+        p.tiger {
+            /* word-spacing: -0.5em;*/
+            letter-spacing: -0.5em;
+        }
+
+        /*设置行高*/
+        /*类选择器*/
+        p.smal_line_height {
+            /* line-height: 90%;*/
+            line-height: 0.5;
+        }
+
+        p.big_line_height {
+            /* line-height: 300%;*/
+            /*  line-height: 40px;*/
+            line-height: 3;
+        }
+
+        /*转化为大小写*/
+        /*类选择器*/
+        p.uppercase {
+            text-transform: uppercase;
+        }
+
+        p.lowercase {
+            text-transform: lowercase;
+        }
+
+        p.capitalize {
+            text-transform: capitalize;
+        }
+
+        /*文本修饰*/
+        /*类选择器*/
+        p.noneline {
+            text-decoration: none;
+        }
+
+        p.underline {
+            text-decoration: underline;
+        }
+
+        p.overline {
+            text-decoration: overline;
+        }
+
+        p.throughline {
+            text-decoration: line-through;
+        }
+
+        p.blink {
+            text-decoration: blink;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+
+        /*处理空白符*/
+        /*类选择器*/
+        p.space {
+            /* white-space: normal;*/
+            /* white-space: nowrap;*/
+            white-space: pre;
+        }
+
+        /*文本方向*/
+        /*类选择器*/
+        p.lefttext {
+            direction: ltr;
+        }
+
+        p.righttext {
+            direction: rtl;
+        }
+
+        /*设置字体颜色*/
+        body {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        /*设置文本高亮*/
+        .hightlight {
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+<p id="p1">这是P1段落文本缩进</p>
+
+<div id="outer">
+    <div id="inner">
+        这是一些文本, 这是一些文本,这是一些文本, 这是一些文本, 这是一些文本, 这是一些文本, 这是一些文本, 这是一些文本, 这是一些文本, 这是一些文本, 这是一些文本, 这是一些文本, 这是一些文本,
+        <p>这是段落,这是段落,<span class="hightlight">这是段落,这是段落,</span>这是段落,这是段落,</p>
+    </div>
+</div>
+<h1 class="blue">这是H1标题</h1>
+<h2 class="blue">这是H2标题</h2>
+<h3 class="blue">这是H3标题</h3>
+
+<hr/>
+<p class="spread">设置字间距,设置字间距,设置字间距,设置字间距,设置字间距,设置字间距</p>
+<p class="tiger">设置字间距2,设置字间距2,<span class="hightlight">置字间距2,设置字间距2,设置字间距2,</span>设置字间距2,设置字间距2,设置字间距2</p>
+
+<hr/>
+<p>这是拥有标准行高的段落。
+    在大多数浏览器中默认行高大约是 110% 到 120%。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    在大多数浏览器中默认行高大约是 110% 到 120%。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    在大多数浏览器中默认行高大约是 110% 到 120%。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    在大多数浏览器中默认行高大约是 110% 到 120%。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+</p>
+
+<p class="smal_line_height">这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+</p>
+
+<p class="big_line_height">
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+</p>
+
+<hr/>
+<p class="uppercase">My name is xiaoming</p>
+<p class="lowercase">My name is xiaoming</p>
+<p class="capitalize">my name is xiaoming</p>
+
+<hr/>
+<p class="noneline">文本装饰,下划线</p>
+<p class="underline">文本装饰,下划线</p>
+<p class="overline">文本装饰,上划线</p>
+<p class="throughline">文本装饰,中划线</p>
+<p class="blink">文本装饰,没有修饰</p>
+<p><a href="http://www.baidu.com">这是去掉下划线的连接</a></p>
+<hr/>
+<p class="space">这是一 段文本,这是 一段文本,这是 一段文本,这是
+    一段文本,这是一段文本,
+    这是一段文本, 这是一段文本</p>
+
+<hr/>
+<p class="lefttext">这是从左到右的文本</p>
+<p class="righttext">这是从右到左的文本</p>
+
+</body>
+</html>

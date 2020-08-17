@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 表格</title>
+    <style type="text/css">
+        /*表格宽度和高度*/
+        table.hero {
+            width: 100%;
+        }
+
+        table th {
+            height: 50px;
+            background-color: green;
+            color: white;
+        }
+
+        table.hero td {
+            height: 30px;
+        }
+
+        table.hero, table th, table td, table th {
+            border: 1px solid green;
+            border-collapse: collapse; /*折叠边框*/
+        }
+
+        table.hero td {
+            text-align: center; /*表格文本对齐*/
+            /* vertical-align: bottom; !*表格文本对齐*!*/
+            vertical-align: center;
+            padding: 15px; /*表格内边距*/
+        }
+
+
+    </style>
+</head>
+<body>
+<table class="hero">
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>杨过</td>
+        <td>男</td>
+        <td>28</td>
+    </tr>
+    <tr class="alt">
+        <td>小龙女</td>
+        <td>女</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>赵敏</td>
+        <td>女</td>
+        <td>19</td>
+    </tr>
+    <tr class="alt">
+        <td>郭靖</td>
+        <td>男</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>黄蓉</td>
+        <td>女</td>
+        <td>24</td>
+    </tr>
+    <tr class="alt">
+        <td>张无忌</td>
+        <td>男</td>
+        <td>27</td>
+    </tr>
+</table>
+</body>
+</html>

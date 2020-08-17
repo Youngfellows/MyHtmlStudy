@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 字体</title>
+    <style type="text/css">
+        /*设置字体*/
+        /*派生选择器*/
+        body {
+            font-family: sans-serif;
+            font-size: 100%;
+        }
+
+        /*类选择器*/
+        .font1 {
+            font-size: 60px;
+            font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;;
+        }
+
+        /*字体风格*/
+        .normal {
+            font-style: normal;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .oblique {
+            font-style: oblique;
+        }
+
+        /*小型大写字母*/
+        /*类选择器*/
+        .font2 {
+            font-variant: none;
+        }
+
+        .font3 {
+            font-variant: small-caps;
+        }
+
+        /*字体加粗*/
+        /*类选择器*/
+        .font4 {
+            font-weight: normal;
+        }
+
+        .font5 {
+            font-weight: bold;
+        }
+
+        .font6 {
+            font-weight: 900;
+        }
+
+        /*设置字体大小*/
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        .font7 {
+            /* font:italic bold 12px/30px arial,sans-serif;*/
+            font: italic bold 12px/30px Arial,sans-serif;
+        }
+    </style>
+</head>
+<body>
+<h1 class="font1">这是h1标签</h1>
+<h2>这是h2标签</h2>
+<p class="normal">这是段落内容,这是段落内容,这是段落内容,这是段落内容</p>
+<p class="italic">文本斜体显示,文本斜体显示,文本斜体显示,文本斜体显示</p>
+<p class="oblique ">文本斜体显示,文本斜体显示,文本斜体显示,文本斜体显示</p>
+<p class="font2">This is a paragraph</p>
+<p class="font3">This is a paragraph</p>
+<p class="font4">字体加粗,字体加粗,字体加粗,字体加粗,字体加粗,字体加粗,字体加粗</p>
+<p class="font5">字体加粗,字体加粗,字体加粗,字体加粗,字体加粗,字体加粗,字体加粗</p>
+<p class="font6">字体加粗,字体加粗,字体加粗,字体加粗,字体加粗,字体加粗,字体加粗</p>
+<p class="font7">所有字体属性在一个声明之内,所有字体属性在一个声明之内,所有字体属性在一个声明之内,所有字体属性在一个声明之内,所有字体属性在一个声明之内,所有字体属性在一个声明之内</p>
+</body>
+</html>
