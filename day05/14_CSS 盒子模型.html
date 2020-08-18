@@ -26,7 +26,177 @@
         }
 
         td.test2 {
-            padding: 1em 1.5em;
+            /* padding: 1em 1.5em;*/
+            padding-top: 50px;
+            padding-bottom: 30px;
+            border-style: outset;
+        }
+
+        /*ID选择器*/
+        /*所有边框属性在一个声明之中*/
+        div#border1 {
+            border: medium double rgb(250, 0, 255);
+        }
+
+        /*ID选择器*/
+        /*设置四边框样式*/
+        p.dotted {
+            border-style: dotted;
+        }
+
+        p.dashed {
+            border-style: dashed;
+        }
+
+        p.solid {
+            border-style: solid;
+        }
+
+        p.double {
+            border-style: double;
+        }
+
+        p.groove {
+            border-style: groove;
+        }
+
+        p.ridge {
+            border-style: ridge;
+        }
+
+        p.inset {
+            border-style: inset;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+
+        /*设置每一边的不同边框*/
+        p.soliddouble {
+            border-style: solid double;
+        }
+
+        p.doublesolid {
+            border-style: double solid;
+        }
+
+        p.groovedouble {
+            border-style: groove double;
+        }
+
+        p.three {
+            border-style: solid double groove;
+        }
+
+        /*所有边框宽度属性在一个声明之中*/
+        p.wnornam {
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        p.wthick {
+            border-style: solid;
+            border-width: thick;
+        }
+
+        p.wdouble {
+            border-style: solid;
+            border-width: 5px 10px;
+        }
+
+        p.wthree {
+            border-style: solid;
+            border-width: 5px 10px 1px medium;
+        }
+
+        /*设置边框的颜色*/
+        p.bcone {
+            border-style: solid;
+            border-color: #0000ff;
+        }
+
+        p.bctwo {
+            border-style: solid;
+            border-color: #ff0000 #0000ff;
+        }
+
+        p.bcthree {
+            border-style: solid;
+            border-color: #ff0000 #0000ff #00ff00;
+        }
+
+        p.bcfour {
+            border-style: solid;
+            border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+        }
+
+        /*所有下边框属性在一个声明中*/
+        p.bbotom {
+            border-style: solid;
+            border-bottom: thick dotted #ff0000;
+        }
+
+        p.bcbotom {
+            border-style: solid;
+            border-bottom-color: #ff0000;
+        }
+
+        /*设置下边框的样式*/
+        p.bbsnone {
+            border-style: solid;
+            border-bottom-style: none;
+        }
+
+        p.bbsdotted {
+            border-style: solid;
+            border-bottom-style: dotted;
+        }
+
+        p.bbsdashed {
+            border-style: solid;
+            border-bottom-style: dashed;
+        }
+
+        p.bbssolid {
+            border-style: solid;
+            border-bottom-style: solid;
+        }
+
+        p.bbsgroove {
+            border-style: solid;
+            border-bottom-style: groove;
+        }
+
+        p.bbsridge {
+            border-style: solid;
+            border-bottom-style: ridge;
+        }
+
+        p.bbsinset {
+            border-style: solid;
+            border-bottom-style: inset;
+        }
+
+        p.bbsoutset {
+            border-style: solid;
+            border-bottom-style: outset;
+        }
+
+        /*设置下边框的宽度*/
+        p.bbw1 {
+            border-style: solid;
+            border-bottom-width: 20px;
+        }
+        p.bbw1 {
+            border-style: solid;
+            border-bottom-width: thick;
+        }
+
+        /*所有左边框属性在一个声明之中*/
+        p.bbleft {
+            border-style: solid;
+            border-left: thick double #ff0000;
         }
 
     </style>
@@ -55,5 +225,79 @@
         </td>
     </tr>
 </table>
+
+<hr/>
+<div id="border1">
+    <p>边框</p>
+</div>
+
+<hr/>
+
+<p class="dotted">A dotted border</p>
+<p class="dashed">A dashed border</p>
+<p class="solid">A solid border</p>
+<p class="double">A double border</p>
+<p class="groove">A groove border</p>
+<p class="ridge">A ridge border</p>
+<p class="inset">A inset border</p>
+<p class="outset">A outset border</p>
+
+<hr/>
+
+<p class="soliddouble">Some text,solid double</p>
+<p class="doublesolid">Some text,double double</p>
+<p class="groovedouble">Some text,groove double</p>
+<p class="three">Some text,three</p>
+
+<hr/>
+<p><b>注释:</b>"border-width" 属性如果单独使用的话是不会起作用的。请首先使用 "border-style" 属性来设置边框。</p>
+<p class="wnornam">设置边框宽度</p>
+<p class="wthick">设置边框宽度</p>
+<p class="wdouble">设置边框宽度</p>
+<p class="wthree">设置边框宽度</p>
+
+<hr/>
+
+<p><b>注释：</b>"border-width" 属性如果单独使用的话是不会起作用的。请首先使用 "border-style" 属性来设置边框。</p>
+
+<p class="bcone">One-colored border!</p>
+
+<p class="bctwo">Two-colored border!</p>
+
+<p class="bcthree">Three-colored border!</p>
+
+<p class="bcfour">Four-colored border!</p>
+
+<br>
+<br>
+<br>
+<p class="bbotom">所有下边框属性在一个声明中</p>
+<p class="bcbotom">设置下边框的颜色</p>
+
+<br>
+<br>
+<br>
+<p class="bbsnone">No bottom border.</p>
+<p class="bbsdotted">A dotted bottom border.</p>
+<p class="bbsdashed">A dashed bottom border.</p>
+<p class="bbssolid">A solid bottom border.</p>
+<p class="bbsdouble">A double bottom border.</p>
+<p class="bbsgroove">A groove bottom border.</p>
+<p class="bbsridge">A ridge bottom border.</p>
+<p class="bbsinset">An inset bottom border.</p>
+<p class="bbsoutset">An outset bottom border.</p>
+
+
+<br>
+<br>
+<br>
+<p class="bbw1">设置下边框的宽度</p>
+<p class="bbw2">设置下边框的宽度</p>
+
+<br>
+<br>
+<br>
+<p class="bbleft">所有左边框属性在一个声明之中</p>
+
 </body>
 </html>

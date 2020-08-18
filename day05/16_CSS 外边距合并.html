@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 外边距合并</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        /*ID选择器*/
+        #div1 {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: red;
+        }
+
+        #div2 {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            background-color: blue;
+        }
+
+        #outer {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin-top: 20px;
+        }
+
+        #inner {
+            /*border: yellow solid thick;*/
+            width:50px;
+            height:50px;
+            background-color:blue;
+            margin-top:10px;
+        }
+    </style>
+
+</head>
+<body>
+<p>请注意，两个 div 之间的外边距是 20px，而不是 30px（20px + 10px）。</p>
+
+<div id="div1">
+    div1
+</div>
+<div id="div2">
+    div2
+</div>
+
+<br>
+<br>
+<br>
+<hr/>
+<p>注释：请注意，如果不设置 div 的内边距和边框，那么内部 div 的上外边距将与外部 div 的上外边距合并（叠加）。</p>
+<div id="outer">
+    <div id="inner">
+
+    </div>
+</div>
+</body>
+</html>
